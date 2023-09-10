@@ -129,6 +129,9 @@ export const Navbar = () => {
           <NavLink variant="body2" href="/">
             Home
           </NavLink>
+             <NavLink variant="body2" href="/about">
+            About
+          </NavLink>
           <NavLink variant="body2" href="/sponsor">
             Sponsors
           </NavLink>

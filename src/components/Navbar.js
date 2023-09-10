@@ -144,9 +144,7 @@ export const Navbar = () => {
           <NavLink variant="body2" href="/contact">
             Contact
           </NavLink>
-          <NavLink variant="body2" href="/team">
-            Team
-          </NavLink>
+         
         </NavbarLinksBox>
       </Box>
       <Box

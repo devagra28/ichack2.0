@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AboutCard from '../components/AboutCard';
+import Footer from './Footer';
+
 
 
 function Sponsor() {
@@ -34,6 +36,7 @@ function Sponsor() {
                     <AboutCard/>
                     {/* <SponsorCard/> */}
                 </div>
+            <Footer/>
             </div>
         </>
     )

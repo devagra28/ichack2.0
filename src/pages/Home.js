@@ -7,6 +7,7 @@ import heroImg from "../assets/hero-new-image-removebg-preview.png";
 import CustomButton from "../components/CustomButton";
 import Trackset from "../components/trackset";
 import { tracks } from "../assets/tracks";
+import Hidden from '@mui/material/Hidden';
 
 const Home = () => {
   useEffect(() => {

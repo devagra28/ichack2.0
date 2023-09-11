@@ -19,14 +19,14 @@ const TracksCard = () => {
                                     </p>
                                 </div>
                                 <div className='px-3 xl:max-w-[12.5vw]'>
-                                    <a href="/" className=''>
-                                        <CustomButton
-                                            backgroundColor="#0F1B4C"
-                                            color="#fff"
-                                            buttonText="Read More"
-                                            heroBtn={true}
-                                        />
-                                    </a>
+                                    {/*<a href="/" className=''>*/}
+                                    {/*    <CustomButton*/}
+                                    {/*        backgroundColor="#0F1B4C"*/}
+                                    {/*        color="#fff"*/}
+                                    {/*        buttonText="Read More"*/}
+                                    {/*        heroBtn={true}*/}
+                                    {/*    />*/}
+                                    {/*</a>*/}
                                 </div>
                             </div>
                         </div>

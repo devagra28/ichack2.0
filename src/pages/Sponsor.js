@@ -3,6 +3,7 @@ import SponsorCard from "../components/SponsorCard";
 import Navbar from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import HomeCard from "../components/HomeCard";
 
 function Sponsor() {
     AOS.init({

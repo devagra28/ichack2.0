@@ -1,5 +1,5 @@
 import React from "react";
-import {TracksData} from "../assets/TrackData";
+import TracksData from "../assets/TracksData";
 import CustomButton from "./CustomButton";
 
 const TracksCard = () => {

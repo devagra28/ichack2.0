@@ -8,6 +8,8 @@ import CustomButton from "../components/CustomButton";
 import Trackset from "../components/trackset";
 import { tracks } from "../assets/tracks";
 import Hidden from '@mui/material/Hidden';
+import HomeCard from "../components/HomeCard";
+import SponsorCard from "../components/SponsorCard";
 
 const Home = () => {
   useEffect(() => {
@@ -92,93 +94,113 @@ const Home = () => {
   return (
     <>
     {/* landing */}
-    <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "100vh" }}>
-      <Container>
-        <Navbar />
-        <CustomBox>
-          <Box sx={{ flex: "1" }}>
-            <Typography
-              variant="body2"
-              sx={{
-                fontSize: "18px",
-                color: "#687690",
-                fontWeight: "500",
-                mt: 10,
-                mb: 4,
-                mx: 2,
-              }}
-            >
-              Welcome to IC HACKS - 2023
-            </Typography>
-            <Title variant="h1">
-              A hackathon where you'll love to compete.
-            </Title>
-            <TextWithFadeRight
+    <div>
+      <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "100vh", width: 1}}>
+        <Container sx={{ width: 1}}>
+          <Navbar />
+          <CustomBox>
+            <Box sx={{ flex: "1" }}>
+              <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: "18px",
+                    color: "#687690",
+                    fontWeight: "500",
+                    mt: 10,
+                    mb: 4,
+                    mx: 2,
+                  }}
+              >
+                Welcome to IC HACKS - 2023
+              </Typography>
+              <Title variant="h1">
+                A hackathon where you'll love to compete.
+              </Title>
+              <TextWithFadeRight
+                  variant="body2"
+                  sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
+                  data-aos="fade-right"
+              >
+                Get a head start on the hottest hackathons before they go mainstream!
+                Access exclusive coding competitions with a single search.
+              </TextWithFadeRight>
+              {/* <TextWithFadeRight
               variant="body2"
               sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
-              data-aos="fade-right" 
-            >
-              Get a head start on the hottest hackathons before they go mainstream!
-              Access exclusive coding competitions with a single search.
-            </TextWithFadeRight>
-            {/* <TextWithFadeRight
-              variant="body2"
-              sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
-              data-aos="fade-right" 
+              data-aos="fade-right"
             >
               Access exclusive coding competitions with a single search.
             </TextWithFadeRight> */}
-            <CustomButton
-              backgroundColor="#0F1B4C"
-              color="#fff"
-              buttonText="Know More"
-              heroBtn={true}
-            />
-          </Box>
-
-           <Hidden mdDown>
-            <Box sx={{ flex: "1.25" }}>
-              <img
-                  src={heroImg}
-                  alt="heroImg"
-                  style={{ maxWidth: "100%", marginBottom: "2rem", marginTop: "5rem" }}
-                  data-aos="fade-up"
+              <CustomButton
+                  backgroundColor="#0F1B4C"
+                  color="#fff"
+                  buttonText="Know More"
+                  heroBtn={true}
               />
             </Box>
-          </Hidden>
-        </CustomBox>
-      </Container>
-    </Box>
-    {/* tracks */}
-    <Box sx={{ mt: 5, backgroundColor: "#ffffff", py: 10 }}>
-      <Container>
-        <PropertiesTextBox>
-          <Typography
-            sx={{ color: "#000339", fontSize: "35px", fontWeight: "bold" }}
-          >
-            Tracks
-          </Typography>
-          <Typography sx={{ color: "#5A6473", fontSize: "16px", mt: 1 }}>
-            Everything you need to know when looking for a new home!
-          </Typography>
-        </PropertiesTextBox>
 
-        <PropertiesBox>
-          {tracks.map((property) => (
-            <HouseContainer key={property.id}>
-              <Trackset
-                img={property.img}
-                price={property.price}
-                address={property.address}
-                bedrooms={property.bedrooms}
-                bathrooms={property.bathrooms}
-                space={property.space}
-              />
-            </HouseContainer>
-          ))}
-        </PropertiesBox>
-      </Container>
-    </Box>
+            <Hidden mdDown>
+              <Box sx={{ flex: "1.25" }}>
+                <img
+                    src={heroImg}
+                    alt="heroImg"
+                    style={{ maxWidth: "100%", marginBottom: "2rem", marginTop: "5rem" }}
+                    data-aos="fade-up"
+                />
+              </Box>
+            </Hidden>
+          </CustomBox>
+        </Container>
+      </Box>
+      {/*<div className="max-w-sm">*/}
+      {/*  <Box sx={{ mt: 5, backgroundColor: "#ffffff", py: 10}}>*/}
+      {/*    <Container>*/}
+      {/*      <PropertiesTextBox>*/}
+      {/*        <Typography*/}
+      {/*            sx={{ color: "#000339", fontSize: "35px", fontWeight: "bold" }}*/}
+      {/*        >*/}
+      {/*          Tracks*/}
+      {/*        </Typography>*/}
+      {/*        <Typography sx={{ color: "#5A6473", fontSize: "16px", mt: 1 }}>*/}
+      {/*          Everything you need to know when looking for a new home!*/}
+      {/*        </Typography>*/}
+      {/*      </PropertiesTextBox>*/}
+
+      {/*      <PropertiesBox>*/}
+      {/*        {tracks.map((property) => (*/}
+      {/*            <HouseContainer key={property.id}>*/}
+      {/*              <Trackset*/}
+      {/*                  img={property.img}*/}
+      {/*                  price={property.price}*/}
+      {/*                  address={property.address}*/}
+      {/*                  bedrooms={property.bedrooms}*/}
+      {/*                  bathrooms={property.bathrooms}*/}
+      {/*                  space={property.space}*/}
+      {/*              />*/}
+      {/*            </HouseContainer>*/}
+      {/*        ))}*/}
+      {/*      </PropertiesBox>*/}
+      {/*    </Container>*/}
+      {/*  </Box>*/}
+      {/*</div>*/}
+
+    {/* tracks */}
+
+      <div className='flex flex-col items-center justify-center' data-aos="fade-up">
+        <div>
+          <h1 className='text-6xl text-center font-[#5A6473] font-bold my-[5vh]'>
+            TRACKS
+          </h1>
+        </div>
+      </div>
+
+      <div className="py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-full md:px-4 lg:px-2 lg:py-4" data-aos="fade-up">
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-5">
+            <HomeCard/>
+          </div>
+      </div>
+
+    </div>
     </>
   );
 };

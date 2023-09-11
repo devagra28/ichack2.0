@@ -25,7 +25,7 @@ const Register = () => {
 
     return (
         <>
-            <Box backgroundColor="#E6F0FF" width="100%" height="100vh">
+            <Box backgroundColor="#e3ebfa" width="100%" height="100vh">
                 <Navbar />
                 <Box alignContent="center" alignItems="center" justifyContent="center" margin="10% 20% 0 20%">
                     <FormControl fullWidth>

@@ -10,6 +10,8 @@ import { tracks } from "../assets/tracks";
 import Hidden from '@mui/material/Hidden';
 import HomeCard from "../components/HomeCard";
 import SponsorCard from "../components/SponsorCard";
+import Footer from "./Footer";
+
 
 const Home = () => {
   useEffect(() => {
@@ -95,9 +97,9 @@ const Home = () => {
     <>
     {/* landing */}
     <div>
-      <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "100vh", width: 1}}>
+      <Box sx={{ backgroundColor: "#e3ebfa", minHeight: "100vh", width: 1}}>
+        <Navbar />
         <Container sx={{ width: 1}}>
-          <Navbar />
           <CustomBox>
             <Box sx={{ flex: "1" }}>
               <Typography
@@ -201,6 +203,7 @@ const Home = () => {
       </div>
 
     </div>
+    <Footer />
     </>
   );
 };

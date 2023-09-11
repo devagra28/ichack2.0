@@ -33,9 +33,9 @@ const Trackset = ({ img, price, address, bedrooms, bathrooms, space }) => {
       </ImgContainer>
 
       <Box sx={{ padding: "1rem" }}>
-        <Typography variant="body2" sx={{ fontWeight: "700" }}>
+        {/* <Typography variant="body2" sx={{ fontWeight: "700" }}>
           ${price}
-        </Typography>
+        </Typography> */}
         <Typography variant="body2" sx={{ my: 2 }}>
           {address}
         </Typography>
@@ -47,7 +47,7 @@ const Trackset = ({ img, price, address, bedrooms, bathrooms, space }) => {
             justifyContent: "space-between",
           }}
         >
-          <InfoBox>
+          {/* <InfoBox>
             <img src={bedroomsIcon} alt="bedroomsIcon" />
             <Typography variant="body2" sx={{ mt: 1 }}>
               {bedrooms}
@@ -66,7 +66,7 @@ const Trackset = ({ img, price, address, bedrooms, bathrooms, space }) => {
             <Typography variant="body2" sx={{ mt: 1 }}>
               {space}
             </Typography>
-          </InfoBox>
+          </InfoBox> */}
         </Box>
       </Box>
     </HouseBox>

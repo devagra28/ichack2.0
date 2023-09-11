@@ -132,9 +132,9 @@ export const Navbar = () => {
              <NavLink variant="body2" href="/about">
             About
           </NavLink>
-          <NavLink variant="body2" href="/sponsor">
+          {/*<NavLink variant="body2" href="/sponsor">
             Sponsors
-          </NavLink>
+          </NavLink> */}
           <NavLink variant="body2" href="/track">
             Tracks
           </NavLink>
@@ -155,7 +155,11 @@ export const Navbar = () => {
           gap: '1rem',
         }}
       >
-        <CustomButton backgroundColor="#0F1B4C" color="#fff" buttonText="Register" />
+        <div className='pb-[1%] xl:max-w-[12.5vw]'>
+          <a href="/register">
+            <CustomButton backgroundColor="#0F1B4C" color="#fff" buttonText="Register" />
+          </a>
+        </div>
       </Box>
     </NavbarContainer>
   );

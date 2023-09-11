@@ -9,7 +9,7 @@ const Footer = () => {
     align-items: center;
     min-height: 100vh;
     // background: linear-gradient(to bottom, #ffffff, #0070c0); /* Linear gradient background */
-    background-color: #E6F0FF;
+    background-color: #e3ebfa;
   `;
 
   const SocialIcons = styled.div`

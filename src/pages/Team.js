@@ -3,6 +3,8 @@ import TeamCard from "../components/TeamCard";
 import Navbar from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from './Footer';
+
 
 export const Team = () => {
     AOS.init({
@@ -31,6 +33,7 @@ export const Team = () => {
                     <TeamCard/>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

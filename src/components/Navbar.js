@@ -105,6 +105,14 @@ export const Navbar = () => {
     },
   }));
 
+const goToBottom=()=>{
+    // window.scrollTo({
+    //   top:0,
+    //   behavior: "smooth",
+    // })
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+
   return (
     <NavbarContainer>
       <Box
@@ -141,7 +149,7 @@ export const Navbar = () => {
           {/* <NavLink variant="body2" href="/schedule">
             Schedule
           </NavLink> */}
-          <NavLink variant="body2" href="/contact">
+          <NavLink variant="body2" onClick={goToBottom}>
             Contact
           </NavLink>
          

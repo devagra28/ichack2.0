@@ -26,7 +26,7 @@ export const Team = () => {
                     TEAM
                 </h1>
             </div>
-            <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4" data-aos="fade-up">
+            <div className="px-8 py-4 mx-auto sm:max-w-lg md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4" data-aos="fade-up">
                 <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
                     <TeamCard/>
                 </div>

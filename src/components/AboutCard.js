@@ -1,6 +1,6 @@
 import React from "react";
 import { AboutData } from "../assets/AboutData";
-import ichack from "../assets/ichack logo.png";
+import ichack from "../assets/ichackduotone.png";
 import CustomButton from "./CustomButton";
 
 const AboutCard = () => {

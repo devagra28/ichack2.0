@@ -7,6 +7,7 @@ import heroImg from "../assets/hero-new-image-removebg-preview.png";
 import CustomButton from "../components/CustomButton";
 import Trackset from "../components/trackset";
 import { tracks } from "../assets/tracks";
+import Hidden from '@mui/material/Hidden';
 
 const Home = () => {
   useEffect(() => {
@@ -135,14 +136,16 @@ const Home = () => {
             />
           </Box>
 
-          <Box sx={{ flex: "1.25" }}>
-            <img
-              src={heroImg}
-              alt="heroImg"
-              style={{ maxWidth: "100%", marginBottom: "2rem", marginTop: "5rem" }}
-              data-aos="fade-up" 
-            />
-          </Box>
+           <Hidden mdDown>
+            <Box sx={{ flex: "1.25" }}>
+              <img
+                  src={heroImg}
+                  alt="heroImg"
+                  style={{ maxWidth: "100%", marginBottom: "2rem", marginTop: "5rem" }}
+                  data-aos="fade-up"
+              />
+            </Box>
+          </Hidden>
         </CustomBox>
       </Container>
     </Box>

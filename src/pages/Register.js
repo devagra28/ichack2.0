@@ -7,7 +7,6 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { RegisterData } from "../assets/RegisterData";
 import CustomButton from "../components/CustomButton";
-import Footer from "./Footer";
 
 
 
@@ -50,7 +49,6 @@ const Register = () => {
                         </a>
                     </Submit>
                 </Box>
-                <Footer/>
             </Box>
         </>
     );

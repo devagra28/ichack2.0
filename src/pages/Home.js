@@ -156,7 +156,7 @@ const Home = () => {
           <Typography
             sx={{ color: "#000339", fontSize: "35px", fontWeight: "bold" }}
           >
-            Featured Properties
+            Tracks
           </Typography>
           <Typography sx={{ color: "#5A6473", fontSize: "16px", mt: 1 }}>
             Everything you need to know when looking for a new home!

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import TracksCard from "../components/TrackCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "./Footer";
 
 function Track() {
     AOS.init({
@@ -26,6 +27,7 @@ function Track() {
             </div>
             <TracksCard />
         </div>
+        <Footer/>
     </div>
   )
 }

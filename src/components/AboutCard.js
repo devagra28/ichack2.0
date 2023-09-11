@@ -32,7 +32,7 @@ const AboutCard = () => {
                             <h1 className=" lg:text-4xl text-3xl font-semibold tracking-tight text-gray-900 mb-[2vh]">{sponsor.sponsorName}</h1>
                             <p className="mb-[3vh] font-normal text-gray-500 lg:text-2xl text-justify">{sponsor.sponsorAbout}</p>
                             <div className='pb-[1%] xl:max-w-[12.5vw]'>
-                                <a href="/">
+                                <a href={sponsor.sponsorUrl}>
                                     <CustomButton
                                         backgroundColor="#0F1B4C"
                                         color="#fff"

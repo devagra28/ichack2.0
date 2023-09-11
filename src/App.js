@@ -5,6 +5,8 @@ import Sponsor from './pages/Sponsor';
 import Team from './pages/Team';
 import Track from './pages/Track';
 import About from './pages/About';
+import Register from './pages/Register';
+
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path='/sponsor' element={<Sponsor/>} />
           <Route path='/team' element={<Team/>} />
           <Route path='/track' element={<Track />} />
+          <Route path='/register' element={<Register />} />
+
         </Routes>
       </BrowserRouter>
     </>

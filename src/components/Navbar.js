@@ -36,11 +36,11 @@ export const Navbar = () => {
   };
   const menuItems = [
     { text: 'Home', icon: <HomeIcon />, href: '/' },
-    { text: 'Sponsor', icon: <FeaturedPlayListIcon />, href: '/sponsor' },
+    { text: 'About', icon: <FeaturedPlayListIcon />, href: '/about' },
     { text: 'Tracks', icon: <MiscellaneousServicesIcon />, href: '/track' },
     // { text: "Schedule", icon: <ListAltIcon />, href: "/schedule" },
     { text: 'Contact', icon: <ContactsIcon />, href: '/contact' },
-    { text: 'Team', icon: <ContactsIcon />, href: '/team' },
+    //{ text: 'Team', icon: <ContactsIcon />, href: '/team' },
   ];
 
   const list = (anchor) => (

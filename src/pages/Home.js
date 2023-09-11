@@ -133,12 +133,11 @@ const Home = () => {
             >
               Access exclusive coding competitions with a single search.
             </TextWithFadeRight> */}
-              <CustomButton
-                  backgroundColor="#0F1B4C"
-                  color="#fff"
-                  buttonText="Know More"
-                  heroBtn={true}
-              />
+              <div className='pb-[1%] xl:max-w-[12.5vw]'>
+                <a href="/register">
+                  <CustomButton backgroundColor="#0F1B4C" color="#fff" buttonText="Register" />
+                </a>
+              </div>
             </Box>
 
             <Hidden mdDown>
